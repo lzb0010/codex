@@ -1,5 +1,7 @@
 # i.MX6ULL GT9147 Touchscreen and Qt Touch Setup
 
+imx6ull正点原子开发板，触摸功能的设备树修正和qt的一个调用
+
 This document records the confirmed touchscreen setup for the i.MX6ULL board
 used with the `rootfs_gst` Qt 5.6.3 runtime.
 

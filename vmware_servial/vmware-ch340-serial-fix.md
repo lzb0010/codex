@@ -1,6 +1,14 @@
 # VMware Ubuntu CH340 Serial Troubleshooting
 
-Date: 2026-07-26
+Date: 2026-07-26,vmware识别串口识别，核心原因是brltty 抢占 CH340，
+
+直接解决方法：
+
+sudo systemctl stop brltty
+
+sudo systemctl disable brltty
+
+sudo systemctl mask brltty
 
 ## Symptoms
 

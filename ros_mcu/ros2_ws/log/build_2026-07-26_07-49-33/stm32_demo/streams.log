@@ -1,0 +1,41 @@
+[1.050s] Invoking command in '/home/huanyu/ros2_ws/src/stm32_demo': PYTHONPATH=/home/huanyu/ros2_ws/build/stm32_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stm32_demo build --build-base /home/huanyu/ros2_ws/build/stm32_demo/build install --record /home/huanyu/ros2_ws/build/stm32_demo/install.log --install-scripts $base/lib/stm32_demo --single-version-externally-managed install_data
+[1.448s] running egg_info
+[1.449s] creating ../../build/stm32_demo/stm32_demo.egg-info
+[1.449s] writing ../../build/stm32_demo/stm32_demo.egg-info/PKG-INFO
+[1.449s] writing dependency_links to ../../build/stm32_demo/stm32_demo.egg-info/dependency_links.txt
+[1.453s] writing entry points to ../../build/stm32_demo/stm32_demo.egg-info/entry_points.txt
+[1.454s] writing requirements to ../../build/stm32_demo/stm32_demo.egg-info/requires.txt
+[1.454s] writing top-level names to ../../build/stm32_demo/stm32_demo.egg-info/top_level.txt
+[1.456s] writing manifest file '../../build/stm32_demo/stm32_demo.egg-info/SOURCES.txt'
+[1.461s] reading manifest file '../../build/stm32_demo/stm32_demo.egg-info/SOURCES.txt'
+[1.461s] writing manifest file '../../build/stm32_demo/stm32_demo.egg-info/SOURCES.txt'
+[1.462s] running build
+[1.462s] running build_py
+[1.462s] creating /home/huanyu/ros2_ws/build/stm32_demo/build
+[1.462s] creating /home/huanyu/ros2_ws/build/stm32_demo/build/lib
+[1.462s] creating /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo
+[1.462s] copying stm32_demo/serial_to_stm32.py -> /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo
+[1.462s] copying stm32_demo/__init__.py -> /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo
+[1.462s] copying stm32_demo/send_action.py -> /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo
+[1.464s] running install
+[1.464s] running install_lib
+[1.465s] creating /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo
+[1.465s] copying /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo/serial_to_stm32.py -> /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo
+[1.465s] copying /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo/__init__.py -> /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo
+[1.465s] copying /home/huanyu/ros2_ws/build/stm32_demo/build/lib/stm32_demo/send_action.py -> /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo
+[1.466s] byte-compiling /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo/serial_to_stm32.py to serial_to_stm32.cpython-310.pyc
+[1.467s] byte-compiling /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo/__init__.py to __init__.cpython-310.pyc
+[1.467s] byte-compiling /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo/send_action.py to send_action.cpython-310.pyc
+[1.468s] running install_data
+[1.468s] creating /home/huanyu/ros2_ws/install/stm32_demo/share/ament_index
+[1.468s] creating /home/huanyu/ros2_ws/install/stm32_demo/share/ament_index/resource_index
+[1.468s] creating /home/huanyu/ros2_ws/install/stm32_demo/share/ament_index/resource_index/packages
+[1.468s] copying resource/stm32_demo -> /home/huanyu/ros2_ws/install/stm32_demo/share/ament_index/resource_index/packages
+[1.468s] copying package.xml -> /home/huanyu/ros2_ws/install/stm32_demo/share/stm32_demo
+[1.468s] running install_egg_info
+[1.476s] Copying ../../build/stm32_demo/stm32_demo.egg-info to /home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages/stm32_demo-0.0.0-py3.10.egg-info
+[1.479s] running install_scripts
+[1.525s] Installing send_action script to /home/huanyu/ros2_ws/install/stm32_demo/lib/stm32_demo
+[1.526s] Installing serial_to_stm32 script to /home/huanyu/ros2_ws/install/stm32_demo/lib/stm32_demo
+[1.526s] writing list of installed files to '/home/huanyu/ros2_ws/build/stm32_demo/install.log'
+[1.614s] Invoked command in '/home/huanyu/ros2_ws/src/stm32_demo' returned '0': PYTHONPATH=/home/huanyu/ros2_ws/build/stm32_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huanyu/ros2_ws/install/stm32_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stm32_demo build --build-base /home/huanyu/ros2_ws/build/stm32_demo/build install --record /home/huanyu/ros2_ws/build/stm32_demo/install.log --install-scripts $base/lib/stm32_demo --single-version-externally-managed install_data

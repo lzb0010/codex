@@ -1,0 +1,4 @@
+[console_scripts]
+send_action = stm32_demo.send_action:main
+serial_to_stm32 = stm32_demo.serial_to_stm32:main
+

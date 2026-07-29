@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/stm32_demo/stm32_demo.egg-info/PKG-INFO
+../../build/stm32_demo/stm32_demo.egg-info/SOURCES.txt
+../../build/stm32_demo/stm32_demo.egg-info/dependency_links.txt
+../../build/stm32_demo/stm32_demo.egg-info/entry_points.txt
+../../build/stm32_demo/stm32_demo.egg-info/requires.txt
+../../build/stm32_demo/stm32_demo.egg-info/top_level.txt
+../../build/stm32_demo/stm32_demo.egg-info/zip-safe
+resource/stm32_demo
+stm32_demo/__init__.py
+stm32_demo/send_action.py
+stm32_demo/serial_to_stm32.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

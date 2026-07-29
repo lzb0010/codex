@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"ros_mcu\startup_stm32f407xx.o"
+"ros_mcu\main.o"
+"ros_mcu\gpio.o"
+"ros_mcu\usart.o"
+"ros_mcu\stm32f4xx_it.o"
+"ros_mcu\stm32f4xx_hal_msp.o"
+"ros_mcu\ros_serival.o"
+"ros_mcu\stm32f4xx_hal_uart.o"
+"ros_mcu\stm32f4xx_hal_rcc.o"
+"ros_mcu\stm32f4xx_hal_rcc_ex.o"
+"ros_mcu\stm32f4xx_hal_flash.o"
+"ros_mcu\stm32f4xx_hal_flash_ex.o"
+"ros_mcu\stm32f4xx_hal_flash_ramfunc.o"
+"ros_mcu\stm32f4xx_hal_gpio.o"
+"ros_mcu\stm32f4xx_hal_dma_ex.o"
+"ros_mcu\stm32f4xx_hal_dma.o"
+"ros_mcu\stm32f4xx_hal_pwr.o"
+"ros_mcu\stm32f4xx_hal_pwr_ex.o"
+"ros_mcu\stm32f4xx_hal_cortex.o"
+"ros_mcu\stm32f4xx_hal.o"
+"ros_mcu\stm32f4xx_hal_exti.o"
+"ros_mcu\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ros_mcu\ros_mcu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ros_mcu.map" -o ros_mcu\ros_mcu.axf

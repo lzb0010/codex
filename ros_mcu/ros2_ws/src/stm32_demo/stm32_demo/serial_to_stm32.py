@@ -24,6 +24,15 @@ class SerialToSTM32Node(Node):
             10
         )
 
+
+        self.led_state_pub = self.create_publisher(
+            String,
+            '/led_state',
+            10
+        )
+
+        self.create_timer(0.05, self.read_serial_callback)
+
         self.get_logger().info(f"串口已打开: {self.serial_port}")
 
     def cmd_callback(self, msg):
@@ -44,6 +53,21 @@ class SerialToSTM32Node(Node):
         self.ser.write(data.encode("utf-8"))
         self.get_logger().info(f"已发送到 STM32: {data.strip()}")
 
+    def read_serial_callback(self):
+        while self.ser.in_waiting > 0:
+            line = self.ser.readline().decode(
+                'utf-8', errors='ignore'
+            ).strip()
+
+            if line in ('LED:ON', 'LED:OFF'):
+                state_msg = String()
+                state_msg.data = 'ON' if line == 'LED:ON' else 'OFF'
+
+                self.led_state_pub.publish(state_msg)
+                self.get_logger().info(
+                    f'LED state from STM32: {state_msg.data}'
+                )
+                
     def destroy_node(self):
         if self.ser.is_open:
             self.ser.close()
